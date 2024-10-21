@@ -1,6 +1,7 @@
 package com.parser.CronParser.validator;
 
 public class CronValidatorFactory {
+	
 	public static CronValidator getCronValidator(String type) {
 		if("minute".equals(type))
 			return new MinuteValidator();
@@ -15,4 +16,5 @@ public class CronValidatorFactory {
 		else 
 			return null;
 	}
+	
 }

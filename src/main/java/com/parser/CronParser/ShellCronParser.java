@@ -6,7 +6,7 @@ import org.springframework.shell.standard.ShellOption;
 import java.util.List;
 
 @ShellComponent
-public class MyCommands {
+public class ShellCronParser {
 
     @ShellMethod(key = "parse-cron", value = "Parses the provided cron expression.")
     public String parseCron(@ShellOption String cronExpression) {
